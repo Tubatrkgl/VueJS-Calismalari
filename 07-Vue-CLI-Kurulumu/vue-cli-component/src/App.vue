@@ -1,16 +1,31 @@
 <template>
   <div>
-    <Title />
+    <Title :titleText="text" :text="text2" />
     <h3>App.vue Başlık</h3>
+    <Button @click="cleanInput"/>
+    <input type="text" ref="inputText"/>
   </div>
 </template>
 
 <script>
 import Title from "./components/Title.vue";
+import Button from "./components/Button.vue";
 export default {
   name: "App",
   components: {
     Title,
+    Button,
+  },
+  data() {
+    return {
+      text: "Vue 3'e Giriş",
+      text2: "Vue'ya hoş geldiniz.",
+    };
+  },
+  methods: {
+    cleanInput(){
+      this.$refs.inputText.value = ""
+    }
   },
 };
 </script>

@@ -18,8 +18,25 @@ const routes = [
   {
     path: '/students',
     name: 'students',
-  
+
     component: () => import('../views/StudentsView.vue')
+  },
+  {
+    path: '/students/:id',
+    name: 'studentInfo',
+
+    component: () => import('../views/StudentInfo.vue'),
+    props: true,
+  },
+  {
+    path: '/student',
+    redirect: '/students'
+  },
+  {
+    path: '/:catchAll(.*)',
+    name: 'notFound',
+
+    component: () => import('../views/NotFound.vue')
   },
 ]
 
