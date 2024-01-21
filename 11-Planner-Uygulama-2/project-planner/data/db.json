@@ -1,0 +1,28 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "title": "Deneme 1",
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+            "complete": true
+        },
+        {
+            "id": 2,
+            "title": "Deneme 2",
+            "details": "Lorem ipsum dolor sit amet, consectetur ",
+            "complete": false
+        },
+        {
+            "id": 3,
+            "title": "Deneme 3",
+            "details": "Lorem ipsum sit amet,",
+            "complete": true
+        },
+        {
+            "id": 4,
+            "title": "Deneme 4",
+            "details": "Lorem dolor elit, sed exercitation ullamco",
+            "complete": false
+        }
+    ]
+}
